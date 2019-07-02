@@ -1,0 +1,90 @@
+
+/*------------------------------------*/
+/*
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+/*------------------------------------*/
+/* constants , remove defaults */
+*, h1, h2, h3, h4, p {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+:root{
+    --gap: 10px;
+}
+
+/*------------------------------------*/
+/* shadows , borders */
+
+/*------------------------------------*/
+/* wrapper */
+
+.wrapper{
+    margin: auto;
+    max-width: 960px; /* qHD */
+}
+
+/*------------------------------------*/
+
+li:nth-child(odd){
+    background-color: #f6fadf;
+}
+
+li:nth-child(even){
+
+}
+
+/*------------------------------------*/
+
+header > div {
+    background-color: #dce69f;
+}
+
+/*------------------------------------*/
+
+#card{
+    background-image: url("images/card.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: white;
+
+    outline: 2px solid #dce69f;
+}
+
+/*------------------------------------*/
+.bg-img-container > div{
+    border-radius: 10px;
+}
+
+.bg-img{
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 20%;
+    background-color: white;
+
+    outline: 2px solid #dce69f;
+}
+
+#washing-machine{background-image: url("images/washing-machine.jpg");}
+#dryer{background-image: url("images/dryer.jpg");}
+#dishwasher{background-image: url("images/dishwasher.jpg");}
+#cooking-stove{background-image: url("images/cooking-stove.jpg");}
+
+/*------------------------------------*/
+
+
+
+
+
+

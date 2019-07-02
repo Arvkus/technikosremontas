@@ -3,83 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="
+        Buitinės technikos remontas Šiaulių krašte. 
+        Remontuojame skalbimo mašinas, indaploves, virykles, džiovykles, kavos aparatus.
+        Meistro telefono numeris: +370 614 33179.">
+    
+    <meta name="author" content="Linas Vitkus">
+    <meta name="keywords" content="Linas,Vitkus,remontas,siauliai,skalbykle,skalbimo,masina,indaplove,dziovykle,virykle,pigus,greitas,buitine,technika">
+
     <title>Technikos remontas</title>
 
-    <!-- JQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!-- Bootstrap MD style -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- JQuery - Popper - Bootstrap MD -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+
+    <!-- Ionicons -->
+    <!--
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+    -->
+    <!--
+        https://ionicons.com/
+        https://fezvrasta.github.io/bootstrap-material-design/docs/4.0/getting-started/introduction/
+    -->
 
     <!-- Technikosremontas -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="naujas.css">
+
 </head>
 
 <body>
-    <main class="wrapper mt-5 mb-5">
+
+    <main class="wrapper mt-5 mb-4">
         <header>
-            <img class="w-100" src="images/banner.jpg" alt="">
-            <div class="bg-dark pt-2 pb-2">
-                <h1 class="text-white text-center">Buitinės technikos remontas Šiaulių krašte</h1>
+            <!-- <img class="w-100 banner-img" src="images/banner.jpg" alt=""> -->
+            <div class="">
+                <h1 class="text-center p-2">Buitinės technikos remontas Šiaulių krašte</h1>
             </div>
         </header>
 
-        <section class="primary d-sm-flex">
 
-            <aside class="flex-1">
-                Meistras: linas
-            </aside>
+        <section class="container-fluid mb-3 mt-3">
 
-            <nav class="flex-2 d-flex flex-column flex-md-row">
-                <ul class="d-flex flex-1 flex-column">
-                    <li class="flex-1">e1</li>
-                    <li class="flex-1">e2</li>
-                </ul>
-                <ul class="d-flex flex-1 flex-column">
-                    <li class="flex-1">e3</li>
-                    <li class="flex-1">e4</li>
-                </ul>
-            </nav>
-    
+            <div class="row">
+                <div class="col-sm-4">
+                    <h4>
+                        <b>+370 682 10367</b> <br>
+                        <small class="text-muted">Meistro telefono numeris</small>
+                    </h4>
+                    <p class="mt-3 mb-2">Išsamesnė informacija arba konsultacijos teikiamos telefonu</p>
+                </div>
+
+                <div class="col" id="bg-img-container">
+                    <div class="row">
+                        <div class="bg-img p-2 col-md" id="washing-machine">Skalbimo<br>mašinos<br></div>
+                        <div class="bg-img p-2 col" id="dryer">Džiovyklės<br><br></div>
+                        <div class="bg-img w-100"></div>
+                        <div class="bg-img p-2 col-md" id="dishwasher">Indaplovės<br><br></div>
+                        <div class="bg-img p-2 col" id="cooking-stove">Viryklės<br><br></div>
+                    </div>
+                </div>
+            </div>
+
         </section>
 
-        <section class="bg-dark list">
-            <li>Remontuojame</li>
-            <li>Garantuojame</li>
-            <li>Atvaciuojame</li>
-            <li>Isvaziuojame</li>
-            <li>Isvaziuojame</li>
-            <li>Isvaziuojame</li>
-            <li>Isvaziuojame</li>
+        <section class="bg-ligt mb-3">
+            <ul class="list-group" id="list">
+                <li class="list-group-item">Kokykibškas skalbimo mašinų, indaplovių, viryklių, džiovyklių ir kavos aparatų remontas.</li>
+                <li class="list-group-item">Šaliname įvairaus sudėtingumo mechaninius ir elektroninius gedimus.</li>
+                <li class="list-group-item">Jei yra galimybė, gedimai šalinami namuose, jei ne - remontas vykdomas dirbtuvėse.</li>
+                <li class="list-group-item">Meistras atvyksta pas klientus, atvykimo laikas sutariamas paskambinus.</li>
+                <li class="list-group-item">Suteikiamas remonto garantinis laikotarpis.</li>
+            </ul>
         </section>
 
-        <section class="secondary d-sm-flex">
+        <footer class="container-fluid">
+
+            <div class="row">
+
+                <div class="col-sm">
+                    <div class="row">
+                        <div class="col">
+                            <h4>
+                                <b>+370 614 33179</b> <br>
+                                <small class="text-muted">Šaldytuvų remontas</small>
+                            </h4>
+                        </div>
+                        <div class="w-100 pt-4"></div>
+                        <div class="col">
+                            <h4 class="mb-2">
+                                <b>Reikia naujos buitinės technikos?</b> <br>
+                                <small class="text-muted"><a href="http://www.oksegis.lt"> www.oksegis.lt </a></small>
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="col pt-2 pl-2 pr-4 pb-4" id="card" href="Vizitines.pdf">
+                    Vizitinės kortelės
+                </a>
+            </div>
     
-                <nav class="flex-1 d-flex flex-column flex-md-row">
-                    <ul class="d-flex flex-1 flex-column">
-                        <li class="flex-1">e1</li>
-                        <li class="flex-1">e2</li>
-                    </ul>
-                </nav>
-
-                <aside class="flex-1">
-                    Vizitines korteles
-                </aside>
-        
-            </section>
-
-
-
-        <footer class="bg-dark list d-flex">
-            <li class="">Reikia naujos buitinės technikos? www.oksegis.lt</li>
-            <li class="w-100">Garantuojame</li>
         </footer>
     </main>
-
+        
 
 </body>
+
 </html>
